@@ -1,0 +1,65 @@
+<head>
+  <title>lois-line-sheet</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Laurie Ellen</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <p>laurie@laurieellen.com</p>
+      </div>
+      <div class="col-xs-6">
+        <p>www.laurieellen.com</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <p>@laurieelleny</p>
+      </div>
+      <div class="col-xs-6">
+        <p>07956438934</p>
+      </div>
+    </div>
+  </div>
+<hr>
+  <div class="container">
+    {{> hello}}
+  </div>
+</body>
+
+<template name="hello">
+  {{#each items}}
+  <div class="item">
+    <div class="row">
+      <div class="col-xs-6">
+        <a href="#">
+          <img class="img-responsive" src="http://static1.squarespace.com/static/5304fdb9e4b0bf3b719d454a/54f4995fe4b0f251eec0f94d/5502134fe4b0b76d453fcd1f/1427587381807/?format=500w" alt="...">
+        </a>
+      </div>
+      <div class="col-xs-6">
+        <p>{{title}}</p>
+        <p>
+          Dimensions: 10mm x 10mm
+        </p>
+        <p>
+          Materials: copper, silver etc etc
+        </p>
+        <p>
+          RRP: £20
+        </p>
+        <p>
+          W/S: £10
+        </p>
+        <p>
+          Minimum order: 10
+        </p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</template>
